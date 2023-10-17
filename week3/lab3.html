@@ -13,7 +13,7 @@
                     <img v-bind:src="product.image">
                 </figure>
                 <h2 v-text="product.title"></h2>
-                <p v-text="product.description"></p>
+                <p v-html="product.description"></p>
                 <p>Price:{{product.price}}</p>
             </main>
         </div>
@@ -29,7 +29,7 @@
                         title:"Cat Food,25lb bag",
                         description:"A 25 pound bag of <em>irresistable</em>,"+"organic goodness for your cat",
                         price: 2000,
-                        image:"images/catfood.jpg"
+                        image:"week3/images/catfood.jpg"
                     }
                 }
             });
